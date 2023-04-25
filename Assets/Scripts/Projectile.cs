@@ -28,14 +28,8 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (_collider.IsTouchingLayers(LayerMask.GetMask("Ground", "Hazard")))
-        {
-            Destroy(this.gameObject);
-        }
-        else if (other.gameObject.CompareTag("Enemy"))
-        {
+        if (other.gameObject.CompareTag("Enemy"))
             Destroy(other.gameObject);
-            Destroy(this.gameObject);
-        }
+        Destroy(this.gameObject);
     }
 }
