@@ -94,6 +94,8 @@ crashlytics-build.properties
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
 
+.erp
+
 *.suo
 *.user
 .vs/
