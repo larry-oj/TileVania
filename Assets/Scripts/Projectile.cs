@@ -26,9 +26,16 @@ public class Projectile : MonoBehaviour
         _rigidbody.velocity = new Vector2(_speed, 0f);
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (_collider.IsTouchingLayers(LayerMask.GetMask("Ground", "Hazard")))
+        {
             Destroy(this.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }
