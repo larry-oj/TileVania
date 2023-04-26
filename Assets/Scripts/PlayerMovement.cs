@@ -117,6 +117,8 @@ public class PlayerMovement : MonoBehaviour
         _isAlive = false;
         _animator.SetTrigger($"IsDead");
         _rigidBody.velocity = new Vector2(0f, jumpSpeed);
+        
+        FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
 
     private bool CheckPlayerHorizontalSpeed()

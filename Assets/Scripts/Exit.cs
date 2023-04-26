@@ -9,7 +9,6 @@ public class Exit : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Collided! - " + other.gameObject.CompareTag("Player"));
         if (other.gameObject.CompareTag("Player"))
             StartCoroutine(LoadNextLevel());
     }
@@ -18,6 +17,7 @@ public class Exit : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(loadDelaySeconds);
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        var nextSceneIndex = currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1 ? 0 : currentSceneIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
