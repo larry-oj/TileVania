@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] private int playerLives = 3;
+    [SerializeField] private int playerScore = 0;
     
     private void Awake()
     {
@@ -18,6 +19,11 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    public void IncrementScore(int score)
+    {
+        playerScore += score;
     }
 
     public void ProcessPlayerDeath()
