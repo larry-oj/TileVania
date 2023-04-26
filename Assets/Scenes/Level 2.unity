@@ -7020,7 +7020,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5357974282872123378, guid: cf4ee91b2e4a2404e9c6532979640ae8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5357974282872123378, guid: cf4ee91b2e4a2404e9c6532979640ae8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14782,13 +14782,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelExit
       objectReference: {fileID: 0}
-    - target: {fileID: 8702847223144539074, guid: 3dd542aa297a27948a54b5aff4919396, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8702847223144539076, guid: 3dd542aa297a27948a54b5aff4919396, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8702847223144539076, guid: 3dd542aa297a27948a54b5aff4919396, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14846,7 +14842,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5978865789120556980, guid: 951e85cd62a9182408bf12a13eaae7a4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5978865789120556980, guid: 951e85cd62a9182408bf12a13eaae7a4, type: 3}
       propertyPath: m_LocalPosition.x
